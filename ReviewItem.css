@@ -1,0 +1,142 @@
+.review-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.review-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-item.fake-review {
+  border-left: 4px solid #F44336;
+  background: #fff3e0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.review-header strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating {
+  font-size: 0.9rem;
+}
+
+.user {
+  color: #667eea;
+}
+
+.verified {
+  background: #c8e6c9;
+  color: #2e7d32;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.fake-badge {
+  background: #F44336;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.review-text {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.helpful {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.helpful span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.helpful span:hover {
+  color: #667eea;
+}
+
+.fake-score {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.suspicious-patterns {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff9c4;
+  border-radius: 4px;
+  border-left: 4px solid #FBC02D;
+}
+
+.suspicious-patterns strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pattern-badge {
+  display: inline-block;
+  background: #FBC02D;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .review-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .review-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .review-meta {
+    flex-wrap: wrap;
+  }
+}

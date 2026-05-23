@@ -1,0 +1,89 @@
+.review-analyzer {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.review-analyzer h3 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+}
+
+.review-analyzer button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.analysis-result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  border-left: 4px solid #999;
+}
+
+.analysis-result.fake {
+  border-left-color: #F44336;
+  background: #ffebee;
+}
+
+.analysis-result.authentic {
+  border-left-color: #4CAF50;
+  background: #e8f5e9;
+}
+
+.analysis-result h4 {
+  margin-bottom: 1rem;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item strong {
+  color: #333;
+}
+
+.result-item span {
+  font-weight: bold;
+  color: #667eea;
+}
+
+.result-item ul {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.result-item li {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .review-analyzer {
+    padding: 1rem;
+  }
+}
